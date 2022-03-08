@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@import './normalize';
+
+@import './helpers/helpers';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, 'Microsoft JhengHei', sans-serif;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.form-header {
+  text-align: center;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44.8px;
+  margin: 0;
+}
+
+.form-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  height: 38px;
+}
+
+.form-select {
+  height: 38px;
+}
+
+.form-check-childSeat {
+  margin-bottom: 3px;
+}
+
+.form-check-vegetarian {
+  margin-bottom: 6px;
+}
+
+.submit-btn {
+  border: none;
+  background-color: #212529;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: #ffffff;
+  height: 38px;
+  line-height: 22.4px;
+}
+
+@media screen and (min-width: 429px) {
+  .d-md-flex {
+    display: flex;
+  }
+
+  .w-md-50 {
+    width: 50%;
+  }
+
+  .pe-md-1 {
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  .container {
+    max-width: 412px;
+  }
+}

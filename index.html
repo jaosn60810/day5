@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="六角西餐廳表單" />
+    <link rel="stylesheet" href="./style/all.css" />
+    <title>六角西餐廳表單</title>
+  </head>
+
+  <body>
+    <div class="container mx-auto">
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdN0M30GB6NSQxfeAhWK0B4PSpuIPGVLnoWo4TrksqtkeKtRA/formResponse"
+        method="POST"
+      >
+        <h2 class="form-header py-3">六角西餐廳</h2>
+
+        <div class="d-md-flex mb-2">
+          <div class="w-md-50 pe-md-1">
+            <label for="name" class="d-block form-label">姓名</label>
+            <input
+              type="text"
+              name="entry.104959259"
+              id="name"
+              required
+              class="form-control w-100"
+            />
+          </div>
+          <div class="w-md-50">
+            <label for="phone" class="d-block form-label">電話</label>
+            <input
+              type="tel"
+              name="entry.403616441"
+              id="phone"
+              class="form-control w-100"
+            />
+          </div>
+        </div>
+
+        <div class="mb-2 px-1">
+          <label for="date" class="d-block form-label">日期</label>
+          <input
+            type="date"
+            name="entry.650799372"
+            id="date"
+            class="form-control w-100"
+          />
+        </div>
+
+        <div class="mb-2">
+          <label for="peopleNumber" class="d-block form-label">用餐人數</label>
+          <select
+            id="peopleNumber"
+            name="entry.1491692660"
+            class="form-select w-100"
+          ></select>
+        </div>
+
+        <div class="mb-3">
+          <label class="d-block form-label">其它項目</label>
+          <div class="form-check-childSeat">
+            <input
+              type="checkbox"
+              name="entry.901461210"
+              id="childSeat"
+              value="需要兒童座椅"
+            />
+            <label for="childSeat">需要兒童座椅</label>
+          </div>
+          <div class="form-check-vegetarian">
+            <input
+              type="checkbox"
+              name="entry.901461210"
+              id="vegetarian"
+              value="素食餐點"
+            />
+            <label for="vegetarian">素食餐點</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="entry.901461210"
+              id="smoking"
+              value="吸煙區"
+            />
+            <label for="smoking">吸煙區</label>
+          </div>
+        </div>
+
+        <button type="submit" class="w-100 submit-btn">送出</button>
+      </form>
+    </div>
+
+    <script src="./js/all.js"></script>
+  </body>
+</html>
